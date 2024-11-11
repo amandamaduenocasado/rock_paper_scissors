@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Simple Mode</title>
+    <a href=”../index.html”>Volver al home</a>
+  </head>
+  <body>
+  <header>
+   <div class="score">
+    <span class="text-score">YOU</span>
+    <span id="your-score" class="points">0</span>
+   </div>
+
+   <span class="naming">ROCK PAPER SCISSORS</span>
+
+   <div class="score-pc">
+    <span class="text-score">PC</span>
+    <span id="your-score" class="points">0</span>
+   </div>
+  </header>
+  <main class="main">
+     <!-- Primera pantalla -->
+    <div id="start" class="start hidewindow">
+        <div id="rock-button" class="rock-circle">
+            <img
+            class="icon-button"
+            src="../assets/images/icon-rock.svg"
+            alt="botón piedra"
+          />
+        </div>
+        <div id="paperbutton" class="paper-circle">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-paper.svg"
+              alt="botón papel"
+            />
+          </div>
+          <div id="scissorsbutton" class="scissors-circle">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-scissors.svg"
+              alt="botón tijeras"
+            />
+          </div>
+        </div>
+    </div>
+     <!-- Segunda pantalla -->
+    <!-- Tu elección -->
+    <div id="end" class="end hidewindow">
+        <div class="your-result">
+          <span class="choose-text">YOU PICKED</span>
+          <div id="choose-scissors" class="hide scissorsbox">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-scissors.svg"
+              alt="Botón tijeras"
+            />
+          </div>
+          <div id="choose-scissors" class="hide paperbox">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-paper.svg"
+              alt="Botón papel"
+            />
+          </div>
+          <div id="choose-rock" class="hide rockbox">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-rock.svg"
+              alt="Botón piedra"
+            />
+          </div>
+        </div>
+         <!-- Resultado -->
+        <div class="result">
+          <span id="result-text" class="result-final">YOU WIN</span>
+          <button id="play-again" class="result-button">PLAY AGAIN</button>
+        </div>
+        <!-- Pc -->
+        <div class="pc-result">
+          <span class="choose-text">PC PICKED</span>
+            <div id="choose-scissors-pc" class="hide scissorsbox">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-scissors.svg"
+                alt="Botón tijeras"
+              />
+            </div>
+            <div id="choose-paper-pc" class="hide paperbox">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-paper.svg"
+                alt="Botón papel"
+              />
+            </div>
+            <div id="choose-rock-pc" class="hide rockbox">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-rock.svg"
+                alt="Botón piedra"
+              />
+            </div>
+            <button class="rules-button">RULES</button>
+  </main>
+
+  <script src="./js/scripts.js"></script>
+  </body>
+</html>
