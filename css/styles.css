@@ -8,10 +8,10 @@ html {
 
 /* Bold: 700 Semibold: 600 */
 /* background-color: var(--background-gradient); */
+
 body {
   background-color: #1f3757;
   margin: 0;
-  padding: 0;
   font-family: 'Barlow Semi Condesed', sans-serif;
 }
 
@@ -26,16 +26,33 @@ ul {
   margin-bottom: 0;
 }
 
-.main {
-  font-size: 52px;
+.container {
   display: flex;
-  flex-direction: column;
-  margin-inline: auto;
-  width: 375px;
-  margin-top: 32px;
+  align-items: center;
+  height: 100vh;
+
 }
 
-@media screen and (width>786px) {
+.image-game-simple, .image-game-advanced {
+  position: relative;
+  left: 250px;
+  width: 280px; 
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.title-simple-mode, .title-advanced-mode {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+}
+
+.title-advanced-mode {
+  margin-right: 180px;
+}
+
+/* @media screen and (width>786px) {
   .main {
     flex-direction: row;
     width: 100%;
